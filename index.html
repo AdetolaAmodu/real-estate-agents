@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Agents</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="tailwind.js"></script>
+  </head>
+  <body class="bg-white text-gray-900">
+    <header class="border-b border-gray-200 bg-white">
+      <div
+        class="mx-auto grid max-w-7xl grid-cols-[1fr_auto_1fr] items-center px-6 py-5 lg:px-8"
+      >
+        <a href="#" class="flex items-center gap-3 justify-self-start">
+          <img
+            src="logo.png"
+            alt="Real Estate"
+            class="h-10 w-auto object-contain"
+          />
+          <span class="text-lg font-semibold text-gray-900"
+            >J & P Modelings</span
+          >
+        </a>
+
+        <nav
+          aria-label="Main navigation"
+          class="hidden items-center gap-8 md:flex"
+        >
+          <a
+            href="#home"
+            class="text-sm font-medium text-gray-700 transition-colors hover:text-black"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="text-sm font-medium text-gray-700 transition-colors hover:text-black"
+            >About</a
+          >
+          <a
+            href="#agents"
+            class="text-sm font-medium text-gray-700 transition-colors hover:text-black"
+            >Agents</a
+          >
+          <a
+            href="#contact"
+            class="text-sm font-medium text-gray-700 transition-colors hover:text-black"
+            >Contact</a
+          >
+        </nav>
+
+        <a
+          href="#login"
+          class="justify-self-end rounded-xl border border-black bg-black px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white hover:text-black"
+        >
+          Log in
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <h1 class="text-5xl font-bold text-center text-white">
+          Find Your Accessible Home
+        </h1>
+        <form
+          class="mx-auto mt-8 flex max-w-xl overflow-hidden rounded-xl bg-white shadow-lg"
+          role="search"
+        >
+          <label for="property-microscope" class="sr-only">Search</label>
+          <input
+            id="property-microscope"
+            type="search"
+            placeholder="Search"
+            class="min-w-0 flex-1 px-5 py-4 text-gray-900 outline-none placeholder:text-gray-500"
+          />
+          <button
+            type="submit"
+            aria-label="Search"
+            title="Search"
+            class="px-6 py-4 text-white transition-colors hover:bg-gray-200"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 196 196"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M69.3156 37.0623C59.8543 37.4267 51.3012 40.8033 46.7282 45.3817C46.223 45.8866 45.6233 46.287 44.9634 46.56C44.3035 46.8331 43.5962 46.9735 42.882 46.9733C42.1678 46.973 41.4606 46.8321 40.8009 46.5586C40.1411 46.285 39.5417 45.8842 39.0369 45.379C38.532 44.8738 38.1316 44.2741 37.8586 43.6142C37.5855 42.9542 37.4451 42.247 37.4453 41.5328C37.4456 40.8186 37.5865 40.1114 37.86 39.4516C38.1336 38.7919 38.5344 38.1925 39.0396 37.6877C46.092 30.6352 57.576 26.6332 68.8915 26.1928C80.283 25.7523 92.7186 28.868 101.429 37.5789C102.449 38.5992 103.022 39.9827 103.021 41.4251C103.021 42.8675 102.447 44.2507 101.427 45.2702C100.406 46.2898 99.0229 46.8623 97.5805 46.8618C96.1381 46.8613 94.755 46.2878 93.7354 45.2675C87.8085 39.3352 78.7062 36.6926 69.3156 37.0569"
+                fill="black"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M124.715 116.276C135.495 103.534 141.4 87.3778 141.375 70.6875C141.375 31.6463 109.729 0 70.6875 0C31.6463 0 0 31.6463 0 70.6875C0 109.729 31.6463 141.375 70.6875 141.375C88.0603 141.375 103.965 135.111 116.276 124.715L114.188 136.72L155.045 177.578L177.578 155.045L136.72 114.188L124.715 116.276ZM70.6875 125.062C100.719 125.062 125.062 100.719 125.062 70.6875C125.062 40.6562 100.719 16.3125 70.6875 16.3125C40.6562 16.3125 16.3125 40.6562 16.3125 70.6875C16.3125 100.719 40.6562 125.062 70.6875 125.062Z"
+                fill="black"
+              />
+              <path
+                d="M162.734 185.266L185.267 162.733L192.641 170.107C196.789 174.255 196.789 180.982 192.641 185.125L185.126 192.64C180.977 196.788 174.251 196.788 170.108 192.64L162.734 185.266Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
