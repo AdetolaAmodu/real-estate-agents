@@ -33,7 +33,7 @@
             >Home</a
           >
           <a
-            href="#about"
+            href="about.html"
             class="text-sm font-medium text-gray-700 transition-colors hover:text-black"
             >About</a
           >
@@ -48,13 +48,6 @@
             >Contact</a
           >
         </nav>
-
-        <a
-          href="#login"
-          class="justify-self-end rounded-xl border border-black bg-black px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white hover:text-black"
-        >
-          Log in
-        </a>
       </div>
     </header>
     <main>
@@ -63,7 +56,7 @@
           Find Your Accessible Home
         </h1>
         <form
-          class="mx-auto mt-8 flex max-w-xl overflow-hidden rounded-xl bg-white shadow-lg"
+          class="mx-auto mt-8 flex max-w-xl overflow-hidden rounded-xl border-2 border-black bg-white shadow-lg"
           role="search"
         >
           <label for="property-microscope" class="sr-only">Search</label>
@@ -71,13 +64,13 @@
             id="property-microscope"
             type="search"
             placeholder="Search"
-            class="min-w-0 flex-1 px-5 py-4 text-gray-900 outline-none placeholder:text-gray-500"
+            class="min-w-0 flex-1 rounded-l-xl px-5 py-4 text-gray-900 outline-none placeholder:text-gray-500"
           />
           <button
             type="submit"
             aria-label="Search"
             title="Search"
-            class="px-6 py-4 text-white transition-colors hover:bg-gray-200"
+            class="rounded-r-xl bg-light px-6 py-4 text-white transition-colors hover:bg-gray-200"
           >
             <svg
               width="20"
@@ -103,6 +96,104 @@
             </svg>
           </button>
         </form>
+      </section>
+      <section class="grid grid-cols-1 gap-6 p-6 md:grid-cols-2 lg:grid-cols-3">
+        <article class="overflow-hidden rounded-4xl bg-[#AEAEB280]">
+          <img
+            src="./image.jpg"
+            class="h-72 w-full object-cover"
+            alt="Modern accessible home"
+          />
+          <div class="p-4">
+            <p class="text-2xl font-bold">$180,000</p>
+            <p class="text-xl">3 room self contain</p>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-4xl bg-[#AEAEB280]">
+          <img
+            src="./image(1).jpg"
+            class="h-72 w-full object-cover"
+            alt="Accessible two bedroom flat"
+          />
+          <div class="p-4">
+            <p class="text-2xl font-bold">$240,000</p>
+            <p class="text-xl">2 bedroom flat</p>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-4xl bg-[#AEAEB280]">
+          <img
+            src="./image(2).jpg"
+            class="h-72 w-full object-cover"
+            alt="Two storey furnished building"
+          />
+          <div class="p-4">
+            <p class="text-2xl font-bold">$100,000</p>
+            <p class="text-xl">A two storey furnished building</p>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-4xl bg-[#AEAEB280]">
+          <img
+            src="./image(3).jpg"
+            class="h-72 w-full object-cover"
+            alt="Contemporary residential property"
+          />
+          <div class="p-4">
+            <p class="text-2xl font-bold">$750,000</p>
+            <p class="text-xl">A storey building with a swimming pool</p>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-4xl bg-[#AEAEB280]">
+          <img
+            src="./image(4).jpg"
+            class="h-72 w-full object-cover"
+            alt="Spacious residential property"
+          />
+          <div class="p-4">
+            <p class="text-2xl font-bold">$700,000</p>
+            <p class="text-xl">A bungalow close to the forest reserve</p>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-4xl bg-[#AEAEB280]">
+          <img
+            src="./image(5).jpg"
+            class="h-72 w-full object-cover"
+            alt="Spacious residential property"
+          />
+          <div class="p-4">
+            <p class="text-2xl font-bold">$900,000</p>
+            <p class="text-xl">A bungalow with a garage</p>
+          </div>
+        </article>
+      </section>
+      <section class="border-t border-black-200 bg-white rounded-3xl">
+        <div
+          flex
+          class="mx-auto max-w-7xl text-2xl justify-between gap-6 px-6 py-12 lg:flex lg:px-8"
+        >
+          <div>
+            <a href="#" class="block font-bold">J &amp; P Modelings</a>
+            <a href="#" class="block">@ 2019</a>
+          </div>
+          <div>
+            <p class="block font-bold">Costumers</p>
+            <a href="#" class="block">Buyers</a>
+            <a href="#" class="block">Suppliers</a>
+          </div>
+          <div>
+            <p class="block font-bold">Company</p>
+            <a href="about.html" class="block">About us</a>
+            <a href="#agents" class="block">Agents</a>
+            <a href="#contact" class="block">Contact us</a>
+          </div>
+          <div>
+            <p class="block font-bold">Further Information</p>
+            <a href="#" class="block">Terms &amp; Conditions</a>
+            <a href="#" class="block">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="text-2xl">
+          <a href="#" class="block font-bold">Follow Us On</a>
+        </div>
       </section>
     </main>
   </body>
