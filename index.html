@@ -71,6 +71,7 @@
             id="property-microscope"
             type="search"
             placeholder="Search"
+            autocomplete="off"
             class="min-w-0 flex-1 rounded-l-xl px-5 py-4 text-gray-900 outline-none placeholder:text-gray-500"
           />
           <button
@@ -103,8 +104,16 @@
             </svg>
           </button>
         </form>
+        <p
+          id="search-status"
+          class="mx-auto mt-3 max-w-xl text-center text-sm text-white"
+          aria-live="polite"
+        ></p>
       </section>
-      <section class="grid grid-cols-1 gap-6 p-6 md:grid-cols-2 lg:grid-cols-3">
+      <section
+        id="property-list"
+        class="grid grid-cols-1 gap-6 p-6 md:grid-cols-2 lg:grid-cols-3"
+      >
         <article class="overflow-hidden rounded-4xl bg-[#AEAEB280]">
           <img
             src="./image.jpg"
@@ -358,5 +367,37 @@
         </div>
       </footer>
     </main>
+    <script>
+      const searchForm = document.querySelector('[role="search"]');
+      const searchInput = document.getElementById("property-microscope");
+      const searchStatus = document.getElementById("search-status");
+      const propertyCards = document.querySelectorAll("#property-list article");
+
+      function filterProperties() {
+        const searchTerm = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        propertyCards.forEach((card) => {
+          const matches = card.textContent.toLowerCase().includes(searchTerm);
+          card.hidden = !matches;
+          if (matches) visibleCount += 1;
+        });
+
+        if (searchTerm && visibleCount === 0) {
+          searchStatus.textContent = "No properties match your search.";
+        } else if (searchTerm) {
+          searchStatus.textContent = `${visibleCount} ${visibleCount === 1 ? "property" : "properties"} found.`;
+        } else {
+          searchStatus.textContent = "";
+        }
+      }
+
+      searchForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        filterProperties();
+      });
+
+      searchInput.addEventListener("input", filterProperties);
+    </script>
   </body>
 </html>
