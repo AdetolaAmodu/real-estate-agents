@@ -61,26 +61,147 @@
         <img src="map.png" class="h-130 w-full object-cover" alt="map" />
       </section>
     </main>
-    <section>
+    <section
+      class="mx-auto flex max-w-7xl flex-col gap-8 px-6 py-10 md:flex-row md:gap-12 md:px-8"
+    >
+      <div class="flex-1">
         <div>
-            <h1 class="font-bold text-4xl mb-10 mt-10 ml-10 text-[#0B0BC7]">
-                Contact Information
-                 </h1>
-                <p class="text-2xl ml-10">
-                    We're are here to assist you with any question,concern,<br/>
-                    or feedback.Whether you need support,or more<br/>
-                    information
-
-                    <P>
-
-                    </P>
-
-                    </p>
-
-                </p>
-
-           
+          <h1 class="mb-10 mt-10 ml-10 text-4xl font-bold text-[#0B0BC7]">
+            Contact Information
+          </h1>
+          <p class="ml-10 text-2xl">
+            We're are here to assist you with any question,concern,<br />
+            or feedback.Whether you need support,or more<br />
+            information.
+          </p>
         </div>
+        <div
+          class="mt-8 rounded-2xl bg-[#0B0BC7CC] p-6 text-2xl font-bold text-white"
+        >
+          <div class="flex items-center gap-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 256"
+              class="h-10 w-10 shrink-0 text-white"
+              aria-label="Location icon"
+            >
+              <path
+                d="M128 20c-40.8 0-74 31.6-74 70.5 0 41.6 49.5 99.3 65.3 117.1a16 16 0 0 0 17.4 0c15.8-17.8 65.3-75.5 65.3-117.1C202 51.6 168.8 20 128 20Zm0 94.7a28 28 0 1 1 0-56 28 28 0 0 1 0 56Z"
+                fill="currentColor"
+              />
+            </svg>
+            <div>
+              <div class="text-2xl">Address</div>
+              <div class="mt-2 text-xl leading-relaxed">
+                3680 Schamberger Pass, North Catalina
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 rounded-2xl bg-[#C4C4E4] p-6 text-2xl font-bold">
+          <div class="flex items-center gap-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 256"
+              class="h-10 w-10 shrink-0 text-black"
+              aria-label="Phone icon"
+            >
+              <path
+                d="M92.7 119.3a155.8 155.8 0 0 0 44 44l29.3-29.3a12 12 0 0 1 12.5-2.9c13.7 5.2 28.7 8 44 8a12 12 0 0 1 12 12v43.1a12 12 0 0 1-12 12A168 168 0 0 1 36 68a12 12 0 0 1 12-12h43.1a12 12 0 0 1 12 12c0 15.3 2.8 30.3 8 44a12 12 0 0 1-2.9 12.5L92.7 119.3Z"
+                fill="currentColor"
+              />
+            </svg>
+            <div>
+              <div class="text-2xl">Contact</div>
+              <div class="mt-2 text-xl leading-relaxed">
+                (760)345-456,(760)546-903
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 rounded-2xl bg-[#C4C4E4] p-6 text-2xl font-bold">
+          <div class="flex items-center gap-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 256"
+              class="h-10 w-10 shrink-0 text-black"
+              aria-label="Email icon"
+            >
+              <path
+                d="M224 56H32a16 16 0 0 0-16 16v112a16 16 0 0 0 16 16h192a16 16 0 0 0 16-16V72a16 16 0 0 0-16-16Zm-2.7 20L128 136 34.7 76h186.6ZM32 180V90.7l79.7 62.7a16 16 0 0 0 19.3 0L224 90.7V180H32Z"
+                fill="currentColor"
+              />
+            </svg>
+            <div>
+              <div class="text-2xl">Email</div>
+              <div class="mt-2 text-xl leading-relaxed">
+                www.jpmodelings.com
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-1 md:border-l md:border-gray-300 md:pl-12">
+        <form class="mt-8 rounded-2xl p-6 text-2xl font-bold">
+          <div>
+            <h1 class="mb-10 mt-10 text-4xl font-bold text-[#0B0BC7]">
+              Send Us a Message
+            </h1>
+          </div>
+
+          <label class="mb-4 block">
+            <span class="mb-2 block text-sm font-medium text-gray-700"
+              >Name</span
+            >
+            <input
+              type="text"
+              class="w-full rounded-xl border border-black bg-white px-4 py-3 text-base text-gray-800 outline-none focus:border-[#0B0BC7]"
+              placeholder="Name"
+            />
+          </label>
+
+          <label class="mb-4 block">
+            <span class="mb-2 block text-sm font-medium text-gray-700"
+              >Email</span
+            >
+            <input
+              type="email"
+              class="w-full rounded-xl border border-black bg-white px-4 py-3 text-base text-gray-800 outline-none focus:border-[#0B0BC7]"
+              placeholder="Email"
+            />
+          </label>
+
+          <label class="mb-4 block">
+            <span class="mb-2 block text-sm font-medium text-gray-700"
+              >Phone</span
+            >
+            <input
+              type="tel"
+              class="w-full rounded-xl border border-black bg-white px-4 py-3 text-base text-gray-800 outline-none focus:border-[#0B0BC7]"
+              placeholder="Phone"
+            />
+          </label>
+
+          <label class="mb-4 block">
+            <span class="mb-2 block text-sm font-medium text-gray-700"
+              >Message</span
+            >
+            <textarea
+              rows="4"
+              class="w-full rounded-xl border border-black bg-white px-4 py-3 text-base text-gray-800 outline-none focus:border-[#0B0BC7]"
+              placeholder="Message"
+            ></textarea>
+          </label>
+
+          <button
+            type="submit"
+            class="mt-6 w-full rounded-xl bg-[#0B0BC7] px-8 py-3 text-lg font-semibold text-white transition-colors hover:bg-[#0909a8]"
+          >
+            Send
+          </button>
+        </form>
+      </div>
     </section>
   </body>
 </html>
